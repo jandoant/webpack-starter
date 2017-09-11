@@ -1,18 +1,20 @@
 {
-    "name": "webpack-starter",
-    "version": "1.0.0",
-    "description": "",
-    "main": "app.js",
-    "scripts": {
-        "test": "test",
-        "build": "webpack",
-        "build:prod": "webpack -p",
-        "dev": "webpack-dev-server"
-    },
-    "author": "Jan Doant",
-    "license": "MIT",
-    "devDependencies": {
-        "webpack": "^3.5.6",
-        "webpack-dev-server": "^2.7.1"
-    }
+  "name": "webpack-starter",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "test",
+    "build": "webpack",
+    "build:prod": "webpack -p",
+    "dev": "webpack-dev-server"
+  },
+  "author": "Jan Doant",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.28.7",
+    "style-loader": "^0.18.2",
+    "webpack": "^3.5.6",
+    "webpack-dev-server": "^2.7.1"
+  }
 }
