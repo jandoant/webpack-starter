@@ -5,9 +5,9 @@
     "main": "app.js",
     "scripts": {
         "test": "test",
-        "build": "webpack src/js/app.js build/bundle.js",
-        "build:prod": "webpack src/js/app.js build/bundle.min.js -p",
-        "dev": "webpack-dev-server --entry ./src/js/app.js --output-filename ./build/bundle.js"
+        "build": "webpack",
+        "build:prod": "webpack -p",
+        "dev": "webpack-dev-server"
     },
     "author": "Jan Doant",
     "license": "MIT",
