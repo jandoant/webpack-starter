@@ -1,0 +1,16 @@
+{
+    "name": "webpack-starter",
+    "version": "1.0.0",
+    "description": "",
+    "main": "app.js",
+    "scripts": {
+        "test": "test",
+        "build": "webpack src/js/app.js build/bundle.js",
+        "build:prod": "webpack src/js/app.js build/bundle-production.js -p"
+    },
+    "author": "Jan Doant",
+    "license": "ISC",
+    "devDependencies": {
+        "webpack": "^3.5.6"
+    }
+}
