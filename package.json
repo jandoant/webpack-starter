@@ -6,11 +6,13 @@
     "scripts": {
         "test": "test",
         "build": "webpack src/js/app.js build/bundle.js",
-        "build:prod": "webpack src/js/app.js build/bundle-production.js -p"
+        "build:prod": "webpack src/js/app.js build/bundle.min.js -p",
+        "dev": "webpack-dev-server src/js/app.js build/bundle.js",
     },
     "author": "Jan Doant",
-    "license": "ISC",
+    "license": "MIT",
     "devDependencies": {
-        "webpack": "^3.5.6"
+        "webpack": "^3.5.6",
+        "webpack-dev-server": "^2.7.1"
     }
 }
