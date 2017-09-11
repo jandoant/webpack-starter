@@ -7,7 +7,7 @@
         "test": "test",
         "build": "webpack src/js/app.js build/bundle.js",
         "build:prod": "webpack src/js/app.js build/bundle.min.js -p",
-        "dev": "webpack-dev-server src/js/app.js build/bundle.js",
+        "dev": "webpack-dev-server --entry ./src/js/app.js --output-filename ./build/bundle.js"
     },
     "author": "Jan Doant",
     "license": "MIT",
