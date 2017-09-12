@@ -39,7 +39,21 @@ module.exports = {
             {
                 test: /\.(scss|sass)$/,
                 use: extractPlugin.extract({
-                    use: ['css-loader', 'sass-loader']
+                    use: [{
+                            loader: 'css-loader' //  interprets @import and url() like import/require() and will resolve them.
+                        },
+                        {
+                            loader: 'postcss-loader', // postcss loader so we can use autoprefixer
+                            options: {
+                                config: {
+                                    path: 'postcss.config.js'
+                                }
+                            }
+                        },
+                        {
+                            loader: 'sass-loader' // compiles Sass to CSS
+                        }
+                    ],
                 })
             },
             //HTML-loader
