@@ -15,7 +15,7 @@ module.exports = {
     output: {
         path: path.resolve(__dirname, 'build'),
         filename: 'bundle.js',
-        publicPath: './'
+
     },
     module: {
         rules: [
@@ -49,7 +49,6 @@ module.exports = {
                     options: {
                         name: '[name].[ext]',
                         outputPath: 'img/',
-                        publicPath: 'img/'
                     }
                 }]
             }
