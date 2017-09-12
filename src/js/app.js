@@ -1,4 +1,5 @@
 import '../css/main.scss';
+import 'jquery';
 import { RandomGenerator } from './RandomGenerator';
 
 const outputParagraph = document.querySelector('#outputParagraph');
