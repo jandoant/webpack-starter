@@ -1,6 +1,7 @@
 var path = require('path');
 var ExtractTextPlugin = require('extract-text-webpack-plugin');
 var HtmlWebpackPlugin = require('html-webpack-plugin');
+var CleanWebpackPlugin = require('clean-webpack-plugin');
 
 var extractPlugin = new ExtractTextPlugin({
     filename: 'main.css'
@@ -9,6 +10,11 @@ var extractPlugin = new ExtractTextPlugin({
 var htmlPlugin = new HtmlWebpackPlugin({
     template: 'src/index.html'
 });
+
+var cleanPlugin = new CleanWebpackPlugin(['build']);
+
+
+
 
 module.exports = {
     entry: './src/js/app.js',
@@ -56,6 +62,7 @@ module.exports = {
     },
     plugins: [
         extractPlugin,
-        htmlPlugin
+        htmlPlugin,
+        cleanPlugin
     ]
 };
